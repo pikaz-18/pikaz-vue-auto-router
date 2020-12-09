@@ -3,22 +3,24 @@
  * @Date: 2020-12-09 17:43:27
  * @Author: zouzheng
  * @LastEditors: zouzheng
- * @LastEditTime: 2020-12-09 21:59:33
+ * @LastEditTime: 2020-12-09 22:11:39
 -->
 
 # pikaz-vue-auto-router
 
-## 说明
+## 插件说明
 
-用于 vue-cli 脚手架中的路由自动生成
+本插件用于 vue-cli 脚手架中的路由自动生成，免除手写路由导致的漏写或没有及时同步修改问题。
 
-## 安装
+## 插件安装
 
 ```bash
 yarn add pikaz-vue-auto-router
 
 npm i -S pikaz-vue-auto-router
 ```
+
+<div id="example"></div>
 
 ## 示例
 
@@ -37,7 +39,7 @@ npm i -S pikaz-vue-auto-router
                 └─index.vue
 ```
 
-生成的路由 routesList
+生成的路由列表
 
 ```js
 ;[
@@ -59,11 +61,11 @@ npm i -S pikaz-vue-auto-router
 ]
 ```
 
-## 配置
+## 路由文件配置
 
 在 router 路由文件中
 
-vue-router3
+vue-router3 写法
 
 ```js
 import Vue from 'vue'
@@ -82,7 +84,7 @@ const router = new VueRouter({
 export default router
 ```
 
-vue-router4
+vue-router4 写法
 
 ```js
 import { createRouter, createWebHashHistory } from 'vue-router'
@@ -97,9 +99,9 @@ const router = createRouter({
 export default router
 ```
 
-## 使用
+## 插件使用
 
-在 src 文件夹下的 views 文件夹中，添加页面文件夹，页面文件夹中的 index.vue 文件即为路由文件。
+在 src 文件夹下的 views 文件夹中，添加页面文件夹，页面文件夹中的 index.vue 文件即为路由文件，路由路径为相对于 views 文件夹路径。
 
 js 中添加 meta 信息 为路由 meta 信息
 
@@ -117,3 +119,5 @@ export default {
 };
 </script>
 ```
+
+最终效果如[示例](#example)所示
