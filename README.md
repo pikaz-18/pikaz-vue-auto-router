@@ -3,7 +3,7 @@
  * @Date: 2020-12-09 17:43:27
  * @Author: zouzheng
  * @LastEditors: zouzheng
- * @LastEditTime: 2020-12-09 21:49:20
+ * @LastEditTime: 2020-12-09 21:59:33
 -->
 
 # pikaz-vue-auto-router
@@ -15,66 +15,9 @@
 ## 安装
 
 ```bash
+yarn add pikaz-vue-auto-router
 
-```
-
-## 配置
-
-在 router 路由文件中
-
-vue-router3
-
-```js
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import routesList from '@dmc/vue-auto-router'
-
-Vue.use(VueRouter)
-
-const routes = [...routesList]
-
-const router = new VueRouter({
-    mode: 'history',
-    routes,
-})
-
-export default router
-```
-
-vue-router4
-
-```js
-import { createRouter, createWebHashHistory } from 'vue-router'
-import routesList from '@dmc/vue-auto-router'
-const routes = [...routesList]
-
-const router = createRouter({
-    history: createWebHashHistory(),
-    routes,
-})
-
-export default router
-```
-
-## 使用
-
-在 src 文件夹下的 views 文件夹中，添加页面文件夹，页面文件夹中的 index.vue 文件即为路由文件。
-
-js 中添加 meta 信息 为路由 meta 信息
-
-```js
-<template>
-  <div>
-  </div>
-</template>
-
-<script>
-export default {
-  meta: {
-    name: 123,
-  },
-};
-</script>
+npm i -S pikaz-vue-auto-router
 ```
 
 ## 示例
@@ -114,4 +57,63 @@ export default {
         path: '/second/second',
     },
 ]
+```
+
+## 配置
+
+在 router 路由文件中
+
+vue-router3
+
+```js
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import routesList from 'pikaz-vue-auto-router'
+
+Vue.use(VueRouter)
+
+const routes = [...routesList]
+
+const router = new VueRouter({
+    mode: 'history',
+    routes,
+})
+
+export default router
+```
+
+vue-router4
+
+```js
+import { createRouter, createWebHashHistory } from 'vue-router'
+import routesList from 'pikaz-vue-auto-router'
+const routes = [...routesList]
+
+const router = createRouter({
+    history: createWebHashHistory(),
+    routes,
+})
+
+export default router
+```
+
+## 使用
+
+在 src 文件夹下的 views 文件夹中，添加页面文件夹，页面文件夹中的 index.vue 文件即为路由文件。
+
+js 中添加 meta 信息 为路由 meta 信息
+
+```js
+<template>
+  <div>
+  </div>
+</template>
+
+<script>
+export default {
+  meta: {
+    name: 123,
+  },
+};
+</script>
 ```
