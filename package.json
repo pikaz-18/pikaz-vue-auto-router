@@ -1,6 +1,6 @@
 {
     "name": "pikaz-vue-auto-router",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "auto-router of vuejs",
     "private": false,
     "main": "src/index.js",
@@ -16,9 +16,9 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/pikaz-18/pikaz-excel-js.git"
+        "url": "https://github.com/pikaz-18/pikaz-vue-auto-router.git"
     },
     "bugs": {
-        "url": "https://github.com/pikaz-18/pikaz-excel-js/issues"
+        "url": "https://github.com/pikaz-18/pikaz-vue-auto-router/issues"
     }
 }
