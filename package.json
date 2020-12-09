@@ -1,6 +1,6 @@
 {
     "name": "pikaz-vue-auto-router",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "auto-router of vuejs",
     "private": false,
     "main": "src/index.js",
